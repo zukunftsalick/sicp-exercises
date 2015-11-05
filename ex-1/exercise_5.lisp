@@ -7,6 +7,6 @@
 
 (test 0 (p))
 
-;; in mit-scheme, as it uses applicative-order evaluation, it will hang as p is infinitely redefined (expanded)
+;; in mit-scheme, as it uses applicative-order evaluation, it will hang as p (operand) is infinitely redefined (expanded)
 ;; in normal-order evaluation, it fully expands the arguments to finally apply the operands, therefore
 ;; for the given test call, the return would be 0

@@ -7,10 +7,10 @@
 						(cube-root-iter (improve guess y) guess y)))
 
 (define (improve guess y)
-				(newton (/ y (square guess)) guess guess))
+				(newton (/ y (square guess)) guess))
 
-(define (newton x y z)
-				(/ (+ x y z) 3))
+(define (newton x y)
+				(/ (+ x (+ y y)) 3))
 
 
 (define (good-enough? guess previous-guess)
